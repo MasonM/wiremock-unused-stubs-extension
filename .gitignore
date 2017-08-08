@@ -1,0 +1,8 @@
+/.gradle/
+/.idea/
+/build/
+/out/
+private.key
+/mappings/
+/__files/
+/docker/
