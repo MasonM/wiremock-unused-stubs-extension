@@ -4,7 +4,7 @@ apply plugin: 'maven'
 apply plugin: 'signing'
 
 sourceCompatibility = 1.8
-group = 'com.github.masonm.wiremock'
+group = 'com.github.masonm'
 archivesBaseName = 'wiremock-unused-stubs-extension'
 version = '0.1a'
 
