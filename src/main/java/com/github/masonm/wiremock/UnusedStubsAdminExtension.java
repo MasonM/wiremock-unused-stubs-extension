@@ -23,6 +23,11 @@ public class UnusedStubsAdminExtension implements AdminApiExtension {
         return getClass().getName();
     }
 
+    /**
+     * Adds the GET and DELETE route for /unused_mappings, using anonymous classes for the AdminTask
+     *
+     * @param router The Wiremock-provided router
+     */
     @Override
     public void contributeAdminApiRoutes(Router router) {
         // Can't use "/mappings/unused" as the route because that'll match "/mappings/{id}"
@@ -39,6 +44,12 @@ public class UnusedStubsAdminExtension implements AdminApiExtension {
         );
     }
 
+    /**
+     * Finds all stub mappings that haven't matched any of the ServeEvents in the request journal.
+     *
+     * @param admin Wiremock-provided Admin object
+     * @return Stream of unmatched StubMappings
+     */
     private Stream<StubMapping> getUnusedMappings(Admin admin) {
         final Set<UUID> servedStubIds = admin
             .getServeEvents()
