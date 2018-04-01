@@ -9,7 +9,7 @@ import static java.net.HttpURLConnection.HTTP_OK;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-public class GetUnusedMappingsAcceptanceTest extends UnusedMappingsAcceptanceTestBase{
+public class GetUnusedMappingsAcceptanceTest extends UnusedMappingsAcceptanceTestBase {
     @Test
     public void withNoRequests() {
         assertThat(testClient.get(ADMIN_URL).content(), equalToJson("[]"));

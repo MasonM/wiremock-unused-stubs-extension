@@ -14,13 +14,14 @@ These will be placed in `build/libs/`.
 
 Standalone server:
 ```sh
-java -jar build/libs/wiremock-unused-stubs-extension-0.1a-standalone.jar
+java -jar build/libs/wiremock-unused-stubs-extension-0.2-standalone.jar
 ```
 
 With WireMock standalone JAR:
 ```sh
+wget -nc http://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/2.14.0/wiremock-standalone-2.14.0.jar
 java \
-        -cp wiremock-standalone.jar:build/libs/wiremock-unused-stubs-extension-0.1a.jar \
+        -cp wiremock-standalone-2.14.0.jar:build/libs/wiremock-unused-stubs-extension-0.2.jar \
         com.github.tomakehurst.wiremock.standalone.WireMockServerRunner \
         --extensions="com.github.masonm.wiremock.UnusedStubsAdminExtension"
 ```
