@@ -27,7 +27,7 @@ public class GetUnusedMappingsAcceptanceTest extends UnusedMappingsAcceptanceTes
 
     @Test
     public void withMultipleMappings() {
-        StubMapping stub1 = stubFor(get(urlEqualTo("/stub-1")));
+        stubFor(get(urlEqualTo("/stub-1")));
         StubMapping stub2 = stubFor(get(urlEqualTo("/stub-2")));
 
         assertThat(testClient.get("/stub-1").statusCode(), is(HTTP_OK));
