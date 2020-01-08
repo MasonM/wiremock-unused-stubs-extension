@@ -35,6 +35,6 @@ new WireMockServer(wireMockConfig()
 # Usage
 
 * Call `GET /__admin/unused_mappings` to retrieve an array of stub mappings that have not matched any requests in the request journal.
-* Call `DELETE /__admin/unused_mappings` to remove all such stub mappings. By default, any body files used by the stub mapppings (typically stored in the "__files" directory) will preserved. To remove those too, pass "remove_files" in the query, i.e. `DELETE /__admin/unused_mappings?remove_files`
+* Call `DELETE /__admin/unused_mappings` to remove all such stub mappings. By default, any body files used by the stub mappings (typically stored in the "__files" directory) will preserved. To remove those too, pass "remove_files" in the query, i.e. `DELETE /__admin/unused_mappings?remove_files`
 
 
