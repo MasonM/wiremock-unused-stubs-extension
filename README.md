@@ -1,3 +1,7 @@
+# DEPRECATED
+
+A modified version of this extension was [integrated into WireMock v3.13.0](https://github.com/wiremock/wiremock/releases/tag/3.13.0).
+
 # Overview
 
 [![Build Status](https://travis-ci.org/MasonM/wiremock-unused-stubs-extension.svg?branch=master)](https://travis-ci.org/MasonM/wiremock-unused-stubs-extension)
